@@ -5,9 +5,13 @@ public class Rectangle {
     private int width;
 
 
-    public int squareRectangle(int a, int b) {
-        int square = a * b;
+    public void squareRectangle(int length, int width) {
+        int square = length * width;
         System.out.println(square);
-        return square;
+    }
+
+    public void perimeterRectangle(int length, int width) {
+        int perimeter = (length + width) * 2;
+        System.out.println(perimeter);
     }
 }
