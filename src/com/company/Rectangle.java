@@ -4,14 +4,18 @@ public class Rectangle {
     private int length;
     private int width;
 
-
-    public void squareRectangle(int length, int width) {
-        int square = length * width;
-        System.out.println(square);
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
     }
 
-    public void perimeterRectangle(int length, int width) {
+    public int squareRectangle() {
+        int square = length * width;
+        return square;
+    }
+
+    public int perimeterRectangle() {
         int perimeter = (length + width) * 2;
-        System.out.println(perimeter);
+        return perimeter;
     }
 }
